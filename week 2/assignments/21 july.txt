@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My CSS experiment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>This is my first CSS example</p>
+    <div class="outer">
+      <div class="box1">The inner box is 90% - 30px.</div>
+    </div>
+    <div class="box"></div>
+    <p>
+      As the body has been set to have a color of blue this is inherited through
+      the descendants.
+    </p>
+    <p>
+      We can change the color by targetting the element with a selector, such as
+      this <span>span</span>.
+    </p>
+    <ul class="main">
+      <li>Item One</li>
+      <li>
+        Item Two
+        <ul>
+          <li>2.1</li>
+          <li>2.2</li>
+        </ul>
+      </li>
+      <li>
+        Item Three
+        <ul class="special">
+          <li>
+            3.1
+            <ul>
+              <li>3.1.1</li>
+              <li>3.1.2</li>
+            </ul>
+          </li>
+          <li>3.2</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul>
+      <li>Default <a href="#">link</a> color</li>
+      <li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+      <li class="my-class-2">Reset the <a href="#">link</a> color</li>
+      <li class="my-class-3">Unset the <a href="#">link</a> color</li>
+    </ul>
+    <h2>Heading with no class</h2>
+    <h2 class="small">Heading with class of small</h2>
+    <h2 class="bright">Heading with class of bright</h2>
+
+    <div id="outer" class="container">
+      <div id="inner" class="container">
+        <ul>
+          <li class="nav"><a href="#">One</a></li>
+          <li class="nav"><a href="#">Two</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="better">This is a paragraph.</p>
+    <p class="better" id="winning">One selector to rule them all!</p>
+  </body>
+</html>
